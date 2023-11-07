@@ -8,10 +8,10 @@
     <!-- gg font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- oswold -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Oswald:wght@300;700&display=swap" rel="stylesheet">
     <!-- slide show -->
         <!-- css -->
         <link rel="stylesheet" href="css/owl.carousel.css">
@@ -76,21 +76,33 @@
             </header>
             <main id="main">
                 <section class="main-content-1">
-                    <div class="backbround-banner">
-                        <img class="desktop" src="img/background.png" alt="">
-                        <img class="mobile" src="img/background-mobile.png" alt="">
+                    <div id="slider-banner" class="backbround-banner">
+                        <div class="slider-banner-desktop owl-carousel owl-theme">
+                            <img class="desktop" src="img/background.png" alt="">
+                            <img class="desktop" src="img/background.png" alt="">
+                            <img class="desktop" src="img/background.png" alt="">
+                        </div>
+                        <div class="slider-banner-mobile owl-carousel owl-theme">
+                            <img class="mobile" src="img/background-mobile.png" alt="">
+                            <img class="mobile" src="img/background-mobile.png" alt="">
+                            <img class="mobile" src="img/background-mobile.png" alt="">
+                        </div>
                         <div class="shopping-content">
-                            <h1>Abbigliamento tecnico sportivo</h1>
-                            <div class="btn-product">
-                                <p>scopri di più</p>
-                                <span class="prev">
-                                    prev
-                                </span>
+                            <div class="wrap-shopping-content layout-content">
+                                <div class="layout-content-mobile">
+                                    <h1>Abbigliamento tecnico sportivo</h1>
+                                    <div class="btn-product">
+                                        <p>scopri di più</p>
+                                        <span class="prev">
+                                            prev
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="text-slide-banner">
-                        <p>Be human - be hero - be iron-ic - Be human - be hero - be iron-ic - Be human - be hero - be iron-ic</p>
+                        <p>Be human - be hero - be iron-ic - Be human - be hero - be iron-ic - Be human - be hero - be iron-ic </p>
                     </div>
                 </section>
                 <section class="main-content-2">
@@ -103,8 +115,10 @@
                     <div class="shopping-slider">
                         <div class="wraper-slider">
                             <div class="title-slider layout-content">
-                                <h3>Per chi stai</h3>
-                                <h2>FACENDO SHOPPING?</h2>
+                                <div class="title-item">
+                                    <h3>Per chi stai</h3>
+                                    <h2>FACENDO SHOPPING?</h2>
+                                </div>
                             </div>
                             <div id="slider" class="layout-content">
                                 <div class="list-slider">
@@ -144,7 +158,7 @@
                 </section>
                 <section class="main-content-4">
                     <div id="slider2" class="categorie-content">
-                        <div class="title-categorie">
+                        <div class="title-categorie layout-content">
                             <h3>Scegli per sport</h3>
                         </div>
                         <div class="list-categorie owl-carousel owl-theme">
@@ -213,34 +227,38 @@
                             <img src="img/layout-main.png" alt="">
                         </div>
                         <div class="content">
-                            <h2>TECNOLOGIE</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="btn-product">
-                                <p>scopri di più</p>
-                                <span class="prev">
-                                    prev
-                                </span>
+                            <div class="wrap-content layout-content-mobile">
+                                <h2>TECNOLOGIE</h2>
+                                <p class="text-css">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="btn-product sec-5">
+                                    <p>scopri di più</p>
+                                    <span class="prev">
+                                        prev
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section class="main-content-6">
                     <div class="wrap-content-6 layout-content">
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                        <p>
-                            Iron-ic è un&apos;azienda che nasce nel 1999 dall&apos;idea di Mauro Gorgaini,
-                             imprenditore con oltre vent&apos;anni di esperienza nel settore della calzetteria di alta gamma,
-                              promotore di una nuova cultura dell&apos;intimo seamless, senza cuciture ed estremamente comodo.
-                               Iron-ic unisce questo elemento a un 
-                               <b>abbigliamento tecnico declinato secondo tre linee: uomo, donna e bambino.</b>
-                                Capi outwear progettati con <b>materie prime di alta qualità,</b> fibre intrecciate che si modellano a diretto
-                                 contatto con il corpo dell&apos;atleta aumentando le prestazioni nelle zone più sollecitate dallo sport,
-                                  garantendo al massimo la sensazione di benessere durante l&apos;attività fisica con qualsiasi condizione
-                                   atmosferica.
-                        </p>
-                        <a href="#">
-                            Leggi di più
-                        </a>
+                        <div class="layout-content-mobile">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                            <p>
+                                Iron-ic è un&apos;azienda che nasce nel 1999 dall&apos;idea di Mauro Gorgaini,
+                                 imprenditore con oltre vent&apos;anni di esperienza nel settore della calzetteria di alta gamma,
+                                  promotore di una nuova cultura dell&apos;intimo seamless, senza cuciture ed estremamente comodo.
+                                   Iron-ic unisce questo elemento a un 
+                                   <b>abbigliamento tecnico declinato secondo tre linee: uomo, donna e bambino.</b>
+                                    Capi outwear progettati con <b>materie prime di alta qualità,</b> fibre intrecciate che si modellano a diretto
+                                     contatto con il corpo dell&apos;atleta aumentando le prestazioni nelle zone più sollecitate dallo sport,
+                                      garantendo al massimo la sensazione di benessere durante l&apos;attività fisica con qualsiasi condizione
+                                       atmosferica.
+                            </p>
+                            <a class="links" href="#">
+                                Leggi di più
+                            </a>
+                        </div>
                     </div>
                 </section>
             </main>
@@ -255,33 +273,25 @@
                                 <div class="exp-item">
                                     <img src="https://demo.iron-ic.it/static/version1697702498/frontend/Up3up/ironicm2/it_IT/images/Icons/Plus/Spedizione-gratuita.svg" alt="">
                                     <div class="text-content">
-                                        <h3>Spedizione gratuita </h3>
-                                        <p>Spedizione gratuita 
-                                            per ordini superiori a 39,90€ </p>
+                                        <p>Spedizione gratuita <span>per ordini superiori a 39,90€</span> </p>
                                     </div>
                                 </div>
                                 <div class="exp-item">
                                     <img src="https://demo.iron-ic.it/static/version1697702498/frontend/Up3up/ironicm2/it_IT/images/Icons/Plus/Pagamenti-sicuri.svg">
                                     <div class="text-content">
-                                        <h3>Spedizione gratuita </h3>
-                                        <p>Spedizione gratuita 
-                                            per ordini superiori a 39,90€ </p>
+                                        <p>Spedizione gratuita <span>per ordini superiori a 39,90€</span> </p>
                                     </div>
                                 </div>
                                 <div class="exp-item">
                                     <img src="https://demo.iron-ic.it/static/version1697702498/frontend/Up3up/ironicm2/it_IT/images/Icons/Plus/Reso-facile.svg" alt="">
                                     <div class="text-content">
-                                        <h3>Spedizione gratuita </h3>
-                                        <p>Spedizione gratuita 
-                                            per ordini superiori a 39,90€ </p>
+                                        <p>Spedizione gratuita <span>per ordini superiori a 39,90€</span> </p>
                                     </div>
                                 </div>
                                 <div class="exp-item">
                                     <img src="https://demo.iron-ic.it/static/version1697702498/frontend/Up3up/ironicm2/it_IT/images/Icons/Plus/Reso-facile.svg" alt="">
                                     <div class="text-content">
-                                        <h3>Spedizione gratuita </h3>
-                                        <p>Spedizione gratuita 
-                                            per ordini superiori a 39,90€ </p>
+                                        <p>Spedizione gratuita <span>per ordini superiori a 39,90€</span> </p>
                                     </div>
                                 </div>
                             </div>
@@ -335,7 +345,7 @@
                                 <div class="item-ft-col-1">
                                     <h4>Sponsor tecnico</h4>
                                     <div class="img-item-ft">
-                                        <img src="#" alt="">
+                                        <img src="img/icon-footer.png" alt="">
                                     </div>
                                 </div>
                                 <div class="item-ft-col-2">

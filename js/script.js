@@ -9,16 +9,19 @@ $(document).ready(function() {
     $('#slider .owl-carousel').owlCarousel({
         loop:true,
         margin:8,
-        nav:true,
+        nav:false,
+        dots: true,
         items: 3,
         responsive:{
             0:{
                 items:1.4,
-                margin: 8
+                margin: 8,
+                // nav:false,
             },
             767:{
                 items:1,
-                margin: 8
+                margin: 8,
+                // nav:false,
             },
             800: {
                 items:3,
@@ -51,12 +54,14 @@ $(document).ready(function() {
             800: {
                 items:3,
                 stagePadding: 100,
-                margin:14
+                margin:14,
+                dots: false
             },
             1000:{
                 items:3,
                 stagePadding: 100,
-                margin: 14
+                margin: 14,
+                nav: true
             }
         }
     })
@@ -85,3 +90,10 @@ $(document).ready(function() {
         }
     })
 });
+
+const btnOpen = () => {
+    const x = true
+    const text = document.getElementById('text-js')
+    // e.prevenDefault()
+    text.style.display = "block"
+}

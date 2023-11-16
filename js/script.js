@@ -97,3 +97,17 @@ const btnOpen = () => {
     // e.prevenDefault()
     text.style.display = "block"
 }
+
+$(document).ready(function() {
+    $('#slider-donna .owl-carousel').owlCarousel({
+        loop:false,
+        nav:false,
+        dots: false,
+        items: 9,
+        responsive: {
+            1000: {
+                margin: 35.5,
+            }
+        }
+    })
+});

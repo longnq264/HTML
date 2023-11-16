@@ -18,6 +18,12 @@ p {
 h1,h2,h3,h4,h5 {
     font-family: 'Oswald',sans-serif;
 }
+dl, ol, ul {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 /* -------------------------------- LAYOUT -------------------------------*/
 #layout-web {
     overflow: hidden;
@@ -472,35 +478,39 @@ span.prev::before {
     padding: 0 10.5px;
     list-style: none;
 }
-.item-ft-col-1 {
-    border-bottom: 1px solid #EEEEEE;
-}
 .wrap-content-bottom-2 {
     position: relative;
     max-width: 1140px;
     margin: 0 auto;
 }
-
 .facebook-icon {
-    width: 31px;
-    height: 31px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+svg.svg-inline--fa.fa-facebook-f:hover {
+    color: #A0C519;
+}
+.instagram-icon {
+    width: 32px;
+    height: 32px;
     border: 1px solid black;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     padding-left: 8px;
     border-radius: 15px;
-    margin-right: 15px;
+    cursor: pointer;
 }
-.instagram-icon {
-    width: 31px;
-    height: 31px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    padding-left: 7px;
-    border-radius: 15px;
+svg.svg-inline--fa.fa-instagram:hover {
+    color: #A0C519;
 }
 .slider-banner-mobile {
     position: relative;
@@ -515,11 +525,15 @@ span.prev::before {
     letter-spacing: 1.384615421295166px;
     text-align: left;
     font-weight: 600;
+    cursor: pointer;
 }
 .desc-item p::after {
     content: url('img/Group\ 2.svg');
     margin-left: 13px;
 }
+.desc-item p:hover {
+    color: #A0C519;
+} 
 .main-content-4 {
     padding-top: 3px;
     padding-bottom: 80px;
@@ -653,6 +667,7 @@ p.option-btn::after {
     text-align: left;
     margin-bottom: 8px;
     text-transform: uppercase;
+    font-weight: 600;
 }
 .img-item-ft img {
     width: 40px;
@@ -679,13 +694,11 @@ section.right-col-1 {
     line-height: 24px;
     letter-spacing: 0.5px;
     text-align: left;
+    font-weight: 600;
     text-transform: uppercase;
 }
 .item-ft-col-2 ul li{
     list-style: none;
-}
-.item-ft-col-2.item {
-
 }
 .item-ft-col-2 ul li a {
     text-decoration: none;
@@ -746,6 +759,12 @@ a.btn-open {
     letter-spacing: 2px;
     text-align: left;
     color: #FFF;
+}
+.list-slider .item:hover + .text-content h1 {
+    color: #A0C519;
+}
+.list-slider .owl-carousel.owl-drag .owl-item .item .text-content h1:hover {
+    color: #A0C519;
 }
 .arrow-product {
     position: absolute;
@@ -962,9 +981,11 @@ a.btn-open {
         justify-content: space-between;
     }
     .item-ft-col-2 h4::after {
-        width: 20px;
         content: url('img/hide.svg');
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 0 7px;
     }
     .layout-item-ft-2 {
         flex-direction: column-reverse;
@@ -1015,6 +1036,9 @@ a.btn-open {
     }
     .item-ft-col-2 ul {
         display: none;
+    }
+    .item-ft-col-1 {
+        border-bottom: 1px solid #EEEEEE;
     }
 }
 @media (min-width: 768px) and (max-width: 1123px) {
@@ -1153,7 +1177,8 @@ a.btn-open {
     }
     .wrap-list-item-col-2 {
         display: flex;
-        width: 76.5px;
+        width: 107px;
+        margin-left: 115px;
     }
     .wrap-content-bottom-2 {
         padding: 24.5px 0 18px 0;
@@ -1171,7 +1196,13 @@ a.btn-open {
     .leaguage {
         margin-top: 101px;
     }
-    .content-footer-col-3 {
-        /* padding-top: 36px; */
+    p.option-btn {
+        margin-left: 13px;
+    }
+    .item-ft-col-1 {
+        width: 220px;
+    }
+    .item-ft-col-2 {
+        width: 220px;
     }
 }

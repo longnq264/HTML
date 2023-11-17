@@ -97,6 +97,12 @@ const btnOpen = () => {
     // e.prevenDefault()
     text.style.display = "block"
 }
+const btnOpen2 = () => {
+    const x = true
+    const text = document.getElementById('text-js')
+    // e.prevenDefault()
+    text.style.display = "block"
+}
 
 $(document).ready(function() {
     $('#slider-donna .owl-carousel').owlCarousel({
@@ -105,6 +111,12 @@ $(document).ready(function() {
         dots: false,
         items: 9,
         responsive: {
+            0: {
+                margin:10
+            },
+            400: {
+                margin: 10
+            },
             1000: {
                 margin: 35.5,
             }

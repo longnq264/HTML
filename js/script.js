@@ -123,3 +123,36 @@ $(document).ready(function() {
         }
     })
 });
+
+$(document).ready(function() {
+    function checkScreenWidth() {
+        if ($(window).width() < 860) {
+            $('#slider-detail .owl-carousel').owlCarousel({
+                loop:false,
+                nav:false,
+                dots: false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    560: {
+                        items:1.4
+                    },
+                    767:{
+                        items:2
+                    },
+                    800: {
+                        items:4
+                    },
+                    1000:{
+                        items:6,
+                    }
+                }
+            })
+        }   
+    }
+    checkScreenWidth();
+    $(window).resize(function() {
+        checkScreenWidth();
+    });
+});

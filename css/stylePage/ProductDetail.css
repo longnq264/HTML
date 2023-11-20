@@ -1,0 +1,305 @@
+.layout-detail {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.layout-content {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.wrap-item-left {
+    display: flex;
+    width: 100%;
+    max-width: 65%;
+}
+.wrap-item-left .owl-carousel {
+    display: block;
+    width: 100%;
+}
+.img-items {
+    display: flex;
+}
+.img-items .item {
+    width: 100%;
+    position: relative;
+    max-width: 55px;
+    max-height: 55px;
+    margin-right: 8px;
+    box-sizing: border-box;
+}
+.img-items .item:hover {
+    border: 1px solid black;
+}
+.img-items .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title h1.nameDetail {
+    font-size: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 500;
+}
+.title p.price {
+    font-family: "Oswald",sans-serif;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.title p.price span {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+p.name-type {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.list-size {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-size .size-item {
+    width: 86px;
+    height: 42px;
+    border: 1px solid #EEEEEE;
+    text-align: center;
+    margin-right: 8px;
+    line-height: 42px;
+    margin-bottom: 8px;
+}
+.list-size .size-item:hover {
+    cursor: pointer;
+    background-color: #1D1D1B;
+    color: #FFFFFF;
+}
+.list-size .size-item p {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.wrap-sec-2 .item-sec-2 {
+    border-bottom: 1px solid #EEEEEE;
+    padding: 24.84px 0 23px 0;
+    cursor: pointer;
+} 
+.item-sec-2 .show-content {
+    display: none;
+}
+.wrap-sec-2 .item-sec-2 p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.wrap-sec-2 .item-sec-2 p::after {
+    content: url('../../img/drop-down.svg');
+}
+.wrap-item-right .title {
+    margin-bottom: 39.5px;
+}
+.filter-content {
+    display: flex;
+    margin-bottom: 40px;
+}
+.filter-content .item {
+    display: flex;
+}
+.filter-content .item img {
+    margin-top: 3px;
+    width: 18px;
+    height: 18px;
+}
+.filter-content .item h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-left: 10px;
+}
+.item.left {
+    margin-right: 20px;
+}
+.fill-color {
+    margin-bottom: 39px;
+}
+.fill-color p {
+    font-size: 18px;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 19.5px;
+}
+.title-size {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.title-size p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+.title-size span {
+    /* font-family: Inter; */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: right;
+}
+.title-size span a {
+    color: #1D1D1B;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;   
+}
+.lorem-title {
+    background-color: #EEEEEE;
+    padding: 9px 30.5px 11px 29.5px;
+    position: relative;
+    margin-bottom: 39px;
+}
+.lorem-title p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.lorem-title p::before {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    content: url('../../img/warning.svg');
+}
+.button-content {
+    display: flex;
+    margin-bottom: 23px;
+}
+.btn-item {
+    display: flex;
+    background-color: #A0C519;
+    padding: 14.5px 14px 14.5px 18px;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.btn-item p {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1.7999999523162842px;
+    text-align: left;
+}
+.favor-item {
+    min-width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    border: 1px solid #1D1D1B;
+    padding: 13px 10px 12px 10px;
+    cursor: pointer;
+}
+.favor-item img {
+    width: 100%;
+}
+span.prev-detail {
+    font-size: 0px;
+    display: block;
+}
+.btn-item span.prev-detail::after {
+    content: '';
+    background: url('../../img/Group\ 2.svg') no-repeat center;
+    width: 16px;
+    height: 10px;
+    background-color: #A0C519;
+    color: #FFF;
+    display: block;
+    padding-top: 12px;
+
+}
+.title-payment {
+    display: flex;
+    margin-bottom: 39.5px;
+}
+.list-info .item p {
+    display: flex;
+    margin-bottom: 21px;
+    justify-content: space-between;
+}
+.item-detail {
+    cursor: pointer;
+}
+/* --------------------------------- RESPONSIVE --------------------------- */
+@media (max-width: 480px) {
+
+}
+@media (min-width: 481px) and (max-width: 766px) {
+
+}
+@media (max-width: 767px) {
+
+}
+@media (min-width: 768px) and (max-width: 1123px) {
+
+}
+@media (min-width: 860px) {
+    .wrap-sec-1 {
+        display: flex;
+    }
+    .wrap-item-left {
+        flex-wrap: wrap;
+    }
+    .wrap-item-left .owl-carousel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .item-detail {
+        width: 50%;
+    }
+    .wrap-item-right {
+        padding: 0 46px;
+    }
+}
+@media (min-width: 1124px) {
+    .wrap-sec-2 .item-sec-2 {
+        padding-left:25px;
+        padding-right:25px;
+    }
+    .wrap-sec-2 {
+        border-top: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .main-section-2 {
+        max-width: 1140px;
+        margin: 43px auto;
+    }
+    .wrap-sec-2 {
+        width: 60%;
+    }
+    .title h1.nameDetail {
+        padding-bottom: 8px;
+    }
+    .wrap-item-right {
+        width: 28%;
+    }
+}
